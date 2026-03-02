@@ -1,4 +1,4 @@
-use_bpm 90
+use_bpm 101
 define :thatonebeat_bg do
   play :B1, release: 0.675, amp: 0.7
   play :B0, release: 0.675, amp: 0.7
@@ -109,9 +109,11 @@ live_loop :cool do
   sleep 0.7
   play :D5, release: 4.7
   sleep 0.7
-  sample "C:/Users/achay/Downloads/RecScratch.wav"
+  sample "C:/Users/jordan_simpson/Downloads/audiomass-output.mp3"
+  
   sleep 3
 end
+
 use_bpm 179
 define :melody do
   use_synth :pulse
