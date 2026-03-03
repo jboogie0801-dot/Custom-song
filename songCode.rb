@@ -304,5 +304,5 @@ live_loop :sizzle2 do
   with_fx :echo do
     play :Ab4, amp: 0.4, release: 4
   end
-  sleep 131
+  sleep 130.75
 end
