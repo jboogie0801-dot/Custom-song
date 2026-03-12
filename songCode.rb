@@ -1,3 +1,5 @@
+# Welcome to Sonic Pi
+
 amp_up=0.25
 use_bpm 101
 define :thatonebeat_bg do
@@ -122,7 +124,7 @@ live_loop :foo do
   play :Fs3, release: 2, amp: 0.25
   play :Fs2, release: 2, amp: 0.25
   sleep 0.5
-  sleep 68
+  stop
 end
 
 live_loop :cool do
@@ -187,7 +189,7 @@ live_loop :cool do
     amp_up+0.0625
   end
   play :Ab5, release: 0.5
-  sleep 58
+  stop
 end
 sleep 68.5
 
@@ -241,7 +243,7 @@ define :melody do
 end
 
 live_loop :sizzle2 do
-  sample "C:/Users/achay/Downloads/Saturn.mp3"
+  sample "C:/Users/jordan_simpson/Downloads/Saturn.mp3"
   melody
   use_synth :pulse
   play :F5
@@ -304,5 +306,5 @@ live_loop :sizzle2 do
   with_fx :echo do
     play :Ab4, amp: 0.4, release: 4
   end
-  sleep 130.75
+  stop
 end
