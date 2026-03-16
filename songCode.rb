@@ -1,5 +1,6 @@
 # Welcome to Sonic Pi
-
+rest_time=[0.5, 0.7, 1]
+i=1
 amp_up=0.25
 use_bpm 101
 define :thatonebeat_bg do
@@ -53,37 +54,44 @@ define :thatonebeat2 do
   sleep 0.5
 end
 define :firstPart do
-  play :G4, release: 0.5
-  play :E5, release: 0.5
+  i=1
+  play :G4, release: rest_time[i]
+  play :E5, release: rest_time[i]
   sleep 0.5
-  play :G4, sustain: 0.5
-  play :E5, sustain: 0.5
+  play :G4, sustain: rest_time[i]
+  play :E5, sustain: rest_time[i]
   sleep 0.5
-  play :G4, sustain: 0.5
-  play :E5, sustain: 0.5
+  play :G4, sustain: rest_time[i]
+  play :E5, sustain: rest_time[i]
   sleep 0.5
   play :E5, sustain: 0.3
   sleep 0.3
-  play :G4, sustain: 0.5
-  play :E5, sustain: 0.5
+  i=1
+  play :G4, sustain: rest_time[i]
+  play :E5, sustain: rest_time[i]
   sleep 0.5
-  play :G4, sustain: 0.5
-  play :D5, sustain: 0.5
+  play :G4, sustain: rest_time[i]
+  play :D5, sustain: rest_time[i]
   sleep 0.5
-  play :G4, sustain: 0.7
-  play :B4, sustain: 0.7
+  i=2
+  play :G4, sustain: rest_time[i]
+  play :B4, sustain: rest_time[i]
   sleep 0.7
-  play :Fs4, sustain: 1
-  play :D5, sustain: 1
+  i=3
+  play :Fs4, sustain: rest_time[i]
+  play :D5, sustain: rest_time[i]
   sleep 1
-  play :B4, sustain: 0.5
+  i=1
+  play :B4, sustain: rest_time[i]
   sleep 0.5
-  play :Bb4, sustain: 1
-  play :Fs5, sustain: 1
+  i=3
+  play :Bb4, sustain: rest_time[i]
+  play :Fs5, sustain: rest_time[i]
   sleep 1
-  play :E5, sustain: 0.5
+  i=1
+  play :E5, sustain: rest_time[i]
   sleep 0.5
-  play :D5, sustain: 0.5
+  play :D5, sustain: rest_time[i]
   sleep 0.5
 end
 
